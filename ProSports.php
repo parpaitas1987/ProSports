@@ -9,7 +9,7 @@
  * Author: lswjohn
  * Author URI: http://livescores.website/ProSports
  * Text Domain: prosports
- * License: A short license name. Example: GPL2
+ * License: GPL2
  */
 /* Copyright 2015  Adeel Mughal @ Bir Al Sabia  (email : shahid.umar@gmail.com)
 
