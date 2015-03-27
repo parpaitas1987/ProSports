@@ -1,0 +1,12 @@
+[main]
+host = https://www.transifex.com
+
+[prosports.prosports]
+file_filter = includes/prosports/languages/prosports-<lang>.po
+source_file = includes/prosports/languages/prosports.pot
+source_lang = en_US
+
+[prosports.prosports-pro]
+file_filter = languages/prosports-pro-<lang>.po
+source_file = languages/prosports-pro.pot
+source_lang = en_US

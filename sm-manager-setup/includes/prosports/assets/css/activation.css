@@ -1,0 +1,98 @@
+/* Messages */
+div.prosports-message {
+	border-left-color: #00a69c !important;
+}
+
+div.prosports-message a.button-primary,
+div.prosports-message a.button-secondary,
+p.prosports-actions input.button-primary,
+p.prosports-actions input.button-primary:active,
+p.prosports-actions a.button-primary,
+p.prosports-actions a.button-primary:active {
+	background: #3bbab3;
+	border-color: #15a29a;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 rgba(0,0,0,.1);
+	color: #fff;
+	text-decoration: none;
+}
+
+div.prosports-message a.button-primary:hover,
+div.prosports-message a.button-secondary:hover,
+p.prosports-actions input.button-primary:hover,
+p.prosports-actions input.button-primary:focus,
+p.prosports-actions a.button-primary:hover,
+p.prosports-actions a.button-primary:focus {
+	background: #00a69c;
+	border-color: #009187;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 0 rgba(0,0,0,.1);
+	color: #fff;
+	text-decoration: none;
+}
+
+div.prosports-message a.button-secondary {
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+
+.sp-feature a {
+	text-decoration: none;
+}
+
+.sp-feature p.prosports-actions {
+	margin-top: 16px;
+}
+
+.about-prosports-wrap div.updated {
+	display: block!important;
+}
+
+.about-prosports-wrap .changelog .prosports-steps {
+	margin-top: 24px;
+}
+
+.about-prosports-wrap .changelog .prosports-steps li {
+	line-height: 16px;
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.about-prosports-wrap .changelog .prosports-steps li a {
+	display: block;
+	padding: 0 0 8px;
+	background: transparent!important;
+}
+
+.prosports-steps:before,
+.prosports-steps:after {
+    content: " ";
+    display: table;
+}
+
+.prosports-steps:after {
+    clear: both;
+}
+
+.prosports-steps {
+    *zoom: 1;
+}
+
+.prosports-steps .welcome-icon:before {
+	font: 400 20px/1 dashicons;
+	speak: none;
+	display: inline-block;
+	padding: 0 10px 0 0;
+	top: -1px;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none!important;
+	vertical-align: top;
+	color: #888;
+}
+
+.prosports-steps .sp-welcome-icon:before {
+	font-family: prosports;
+}

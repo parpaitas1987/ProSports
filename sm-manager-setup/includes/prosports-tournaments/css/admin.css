@@ -1,0 +1,72 @@
+.sp-icon-tournament:before {
+	content: "\f185";
+}
+
+#adminmenu #menu-posts-sp_tournament .menu-icon-sp_tournament div.wp-menu-image:before {
+	font-family: prosports, dashicons !important;
+	width: 20px;
+	text-align: center;
+}
+
+.post-state-format.post-format-tournament:before, .post-format-icon.post-format-tournament:before, a.post-state-format.format-tournament:before {
+	content: "\f185";
+}
+
+table.sp-tournament-container tbody {
+	background: #f9f9f9;
+}
+
+table.sp-tournament-container td {
+	padding-right: 0;
+}
+
+table.sp-tournament-container th {
+	padding-right: 0;
+}
+
+table.sp-tournament-container th:last-child {
+	padding-right: 10px;
+}
+
+table.sp-tournament-container th input {
+	padding: 3px 5px;
+	margin: 0;
+}
+
+table.sp-tournament-container .sp-team {
+	position: relative;
+}
+
+table.sp-tournament-container .sp-team:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 14px;
+	border-left: 7px solid #e5e5e5;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+}
+
+table.sp-tournament-container .sp-first-round:before {
+	border: none;
+}
+
+table.sp-tournament-container .sp-event {
+	border-right: 1px solid #e5e5e5;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 10px;
+}
+
+table.sp-tournament-container .sp-last-round {
+	padding-right: 10px;
+	border-right: 0;
+}
+
+table.sp-tournament-container .sp-event select {
+	display: block;
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,31 @@
+<?php
+/**
+ * List Shortcode
+ *
+ * @author 		ProSports
+ * @category 	Admin
+ * @package 	ProSports/Admin/Meta_Boxes
+ * @version     1.4
+ */
+
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+/**
+ * SP_Meta_Box_List_Shortcode
+ */
+class SP_Meta_Box_List_Shortcode {
+
+	/**
+	 * Output the metabox
+	 */
+	public static function output( $post ) {
+		$the_format = get_post_meta( $post->ID, 'sp_format', true );
+		if ( ! $the_format ) $the_format = 'list';
+		?>
+		<p class="howto">
+			<?php _e( 'Copy this code and paste it into your post, page or text widget content.', 'prosports' ); ?>
+		</p>
+		<p><input type="text" value="[player_<?php echo $the_format; ?> <?php echo $post->ID; ?>]" readonly="readonly" class="code widefat"></p>
+		<?php
+	}
+}

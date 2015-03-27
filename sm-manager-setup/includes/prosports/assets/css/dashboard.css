@@ -1,0 +1,124 @@
+/* ProSports dashboard styles */
+
+#prosports_dashboard_status .inside {
+	padding: 0;
+	margin: 0;
+}
+
+
+#dashboard_right_now .sp-event-count a:before,
+#dashboard_right_now .sp-event-count span:before,
+#dashboard_right_now .sp-team-count a:before,
+#dashboard_right_now .sp-team-count span:before,
+#dashboard_right_now .sp-player-count a:before,
+#dashboard_right_now .sp-player-count span:before {
+	font-family: 'prosports';
+}
+
+#dashboard_right_now .sp-event-count a:before,
+#dashboard_right_now .sp-event-count span:before {
+	content: "\f145";
+}
+
+#dashboard_right_now .sp-team-count a:before,
+#dashboard_right_now .sp-team-count span:before {
+	content: "\f334";
+}
+
+#dashboard_right_now .sp-player-count a:before,
+#dashboard_right_now .sp-player-count span:before {
+	content: "\f307";
+}
+
+#prosports_dashboard_status .sp_status_list {
+	overflow: hidden;
+	margin: 0;
+}
+
+#prosports_dashboard_status .sp_status_list li {
+	width: 50%;
+	float: left;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	color: #aaa;
+}
+
+#prosports_dashboard_status .sp_status_list li.countdown {
+	width: 100%;
+	border-bottom: 1px solid #ececec;
+}
+
+#prosports_dashboard_status .sp_status_list li.events-scheduled {
+	border-right: 1px solid #ececec;
+}
+
+#prosports_dashboard_status .sp_status_list li a {
+	display: block;
+	color: #aaa;
+	padding: 9px 12px;
+	-webkit-transition: all ease .5s;
+	position: relative;
+	font-size: 12px;
+}
+
+#prosports_dashboard_status .sp_status_list li a:before {
+	font-family: prosports, dashicons;
+	speak: none;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	text-indent: 0;
+	top: 0;
+	left: 0;
+	height: 100%;
+	text-align: center;
+	content: "\f145";
+	font-size: 2em;
+	position: relative;
+	width: auto;
+	line-height: 1.2em;
+	color: #464646;
+	float: left;
+	margin-right: 12px;
+	margin-bottom: 12px;
+}
+
+#prosports_dashboard_status .sp_status_list li.countdown a:before {
+	content: "\f469";
+}
+
+#prosports_dashboard_status .sp_status_list li.events-scheduled a:before,
+#prosports_dashboard_status .sp_status_list li.events-published a:before {
+	color: #999;
+	font-size: 2.5em;
+	line-height: 1em;
+	margin-left: -3px;
+	margin-right: 9px;
+}
+
+#prosports_dashboard_status .sp_status_list li.events-scheduled a:before {
+	color: #f9af4b;
+}
+
+#prosports_dashboard_status .sp_status_list li.events-published a:before {
+	color: #00a69c;
+}
+
+#prosports_dashboard_status .sp_status_list li strong {
+	font-size: 18px;
+	line-height: 1.2em;
+	font-weight: 400;
+	display: block;
+	color: #21759b;
+}
+
+#prosports_dashboard_status .sp_status_list li a:hover,
+#prosports_dashboard_status .sp_status_list li a:hover strong,
+#prosports_dashboard_status .sp_status_list li a:hover:before {
+	color: #2ea2cc;
+}

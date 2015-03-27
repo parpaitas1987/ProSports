@@ -1,0 +1,354 @@
+<?php
+/**
+ * Plugin Name: ProSports
+ * Plugin URI: http://prosports.com/prosports/
+ * Description: Manage your club and its players, staff, events, league tables, and player lists.
+ * Version: 1.5
+ * Author: ProSports
+ * Author URI: http://prosports.com
+ * Requires at least: 3.8
+ * Tested up to: 4.0
+ *
+ * Text Domain: prosports
+ * Domain Path: /languages/
+ *
+ * @package ProSports
+ * @category Core
+ * @author ProSports
+ */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
+if ( ! class_exists( 'ProSports' ) ) :
+
+/**
+ * Main ProSports Class
+ *
+ * @class ProSports
+ * @version	1.5
+ */
+final class ProSports {
+
+	/**
+	 * @var string
+	 */
+	public $version = '1.5';
+
+	/**
+	 * @var SporsPress The single instance of the class
+	 * @since 0.7
+	 */
+	protected static $_instance = null;
+
+	/**
+	 * @var SP_Countries $countries
+	 */
+	public $countries = null;
+
+	/**
+	 * @var SP_Formats $formats
+	 */
+	public $formats = null;
+
+	/**
+	 * @var array
+	 */
+	public $text = array();
+
+	/**
+	 * Main ProSports Instance
+	 *
+	 * Ensures only one instance of ProSports is loaded or can be loaded.
+	 *
+	 * @since 0.7
+	 * @static
+	 * @see SP()
+	 * @return ProSports - Main instance
+	 */
+	public static function instance() {
+		if ( is_null( self::$_instance ) ) {
+			self::$_instance = new self();
+		}
+		return self::$_instance;
+	}
+
+	/**
+	 * Cloning is forbidden.
+	 *
+	 * @since 0.7
+	 */
+	public function __clone() {
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'prosports' ), '0.7' );
+	}
+
+	/**
+	 * Unserializing instances of this class is forbidden.
+	 *
+	 * @since 0.7
+	 */
+	public function __wakeup() {
+		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'prosports' ), '0.7' );
+	}
+
+	/**
+	 * ProSports Constructor.
+	 * @access public
+	 * @return ProSports
+	 */
+	public function __construct() {
+		// Auto-load classes on demand
+		if ( function_exists( "__autoload" ) ) {
+			spl_autoload_register( "__autoload" );
+		}
+
+		spl_autoload_register( array( $this, 'autoload' ) );
+
+		// Define constants
+		$this->define_constants();
+
+		// Include required files
+		$this->includes();
+
+		// Hooks
+		add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'action_links' ) );
+		add_action( 'widgets_init', array( $this, 'include_widgets' ) );
+		add_action( 'init', array( $this, 'init' ), 0 );
+		add_action( 'init', array( 'SP_Shortcodes', 'init' ) );
+		add_action( 'after_setup_theme', array( $this, 'setup_environment' ) );
+
+		// Loaded action
+		do_action( 'prosports_loaded' );
+	}
+
+	/**
+	 * Show action links on the plugin screen.
+	 *
+	 * @param mixed $links
+	 * @return array
+	 */
+	public function action_links( $links ) {
+		return array_merge( array(
+			'<a href="' . admin_url( 'admin.php?page=sportmanager' ) . '">' . __( 'Settings', 'prosports' ) . '</a>',
+		), $links );
+	}
+
+	/**
+	 * Auto-load SP classes on demand to reduce memory consumption.
+	 *
+	 * @param mixed $class
+	 * @return void
+	 */
+	public function autoload( $class ) {
+		$path  = null;
+		$class = strtolower( $class );
+		$file = 'class-' . str_replace( '_', '-', $class ) . '.php';
+
+		if ( strpos( $class, 'sp_shortcode_' ) === 0 ) {
+			$path = $this->plugin_path() . '/includes/shortcodes/';
+		} elseif ( strpos( $class, 'sp_meta_box' ) === 0 ) {
+			$path = $this->plugin_path() . '/includes/admin/post-types/meta-boxes/';
+		} elseif ( strpos( $class, 'sp_admin' ) === 0 ) {
+			$path = $this->plugin_path() . '/includes/admin/';
+		}
+
+		if ( $path && is_readable( $path . $file ) ) {
+			include_once( $path . $file );
+			return;
+		}
+
+		// Fallback
+		if ( strpos( $class, 'sp_' ) === 0 ) {
+			$path = $this->plugin_path() . '/includes/';
+		}
+
+		if ( $path && is_readable( $path . $file ) ) {
+			include_once( $path . $file );
+			return;
+		}
+	}
+
+	/**
+	 * Define SP Constants.
+	 */
+	private function define_constants() {
+		define( 'SP_PLUGIN_FILE', __FILE__ );
+		define( 'SP_VERSION', $this->version );
+
+		if ( ! defined( 'SP_TEMPLATE_PATH' ) ) {
+			define( 'SP_TEMPLATE_PATH', $this->template_path() );
+		}
+
+		if ( ! defined( 'SP_DELIMITER' ) ) {
+			define( 'SP_DELIMITER', '|' );
+		}
+	}
+
+	/**
+	 * Include required core files used in admin and on the frontend.
+	 */
+	private function includes() {
+		include_once( 'includes/sp-core-functions.php' );
+		include_once( 'includes/class-sp-install.php' );
+
+		if ( is_admin() ) {
+			include_once( 'includes/admin/class-sp-admin.php' );
+		}
+
+		if ( defined( 'DOING_AJAX' ) ) {
+			$this->ajax_includes();
+		}
+
+		if ( ! is_admin() || defined( 'DOING_AJAX' ) ) {
+			$this->frontend_includes();
+		}
+
+		// Post types
+		include_once( 'includes/class-sp-post-types.php' );						// Registers post types
+
+		// Include abstract classes
+		include_once( 'includes/abstracts/abstract-sp-custom-post.php' );		// Custom posts
+
+		// Classes (used on all pages)
+		include_once( 'includes/class-sp-countries.php' );						// Defines continents and countries
+		include_once( 'includes/class-sp-formats.php' );						// Defines custom post type formats
+		include_once( 'includes/class-sp-feeds.php' );							// Adds feeds
+		
+		// Include template functions making them pluggable by plugins and themes.
+		include_once( 'includes/sp-template-functions.php' );
+
+		// Include template hooks in time for themes to remove/modify them
+		include_once( 'includes/sp-template-hooks.php' );
+
+		// WPML-related localization hooks
+		include_once( 'includes/class-sp-wpml.php' );
+	}
+
+	/**
+	 * Include required ajax files.
+	 */
+	public function ajax_includes() {
+		include_once( 'includes/class-sp-ajax.php' );					// Ajax functions for admin and the front-end
+	}
+
+	/**
+	 * Include required frontend files.
+	 */
+	public function frontend_includes() {
+		include_once( 'includes/class-sp-template-loader.php' );		// Template Loader
+		include_once( 'includes/class-sp-frontend-scripts.php' );		// Frontend Scripts
+		include_once( 'includes/class-sp-shortcodes.php' );				// Shortcodes class
+	}
+
+	/**
+	 * Include core widgets
+	 */
+	public function include_widgets() {
+		include_once( 'includes/widgets/class-sp-widget-countdown.php' );
+		include_once( 'includes/widgets/class-sp-widget-event-calendar.php' );
+		include_once( 'includes/widgets/class-sp-widget-event-list.php' );
+		include_once( 'includes/widgets/class-sp-widget-event-blocks.php' );
+		include_once( 'includes/widgets/class-sp-widget-league-table.php' );
+		include_once( 'includes/widgets/class-sp-widget-player-list.php' );
+		include_once( 'includes/widgets/class-sp-widget-player-gallery.php' );
+		include_once( 'includes/widgets/class-sp-widget-staff.php' );
+
+		do_action( 'prosports_widgets' );
+	}
+
+	/**
+	 * Init ProSports when WordPress Initialises.
+	 */
+	public function init() {
+		// Before init action
+		do_action( 'before_prosports_init' );
+
+		// Set up localisation
+		$this->load_plugin_textdomain();
+
+		// Load class instances
+		$this->countries = new SP_Countries();	// Countries class
+		$this->formats = new SP_Formats();		// Formats class
+		$this->feeds = new SP_Feeds(); 			// Feeds class
+
+		// Load string options
+		$this->text = get_option( 'prosports_text', array() );
+
+		// Init action
+		do_action( 'prosports_init' );
+	}
+
+	/**
+	 * Load Localisation files.
+	 *
+	 * Note: the first-loaded translation file overrides any following ones if the same translation is present
+	 */
+	public function load_plugin_textdomain() {
+		$locale = apply_filters( 'plugin_locale', get_locale(), 'prosports' );
+		
+		// Global + Frontend Locale
+		load_textdomain( 'prosports', WP_LANG_DIR . "/prosports/prosports-$locale.mo" );
+		load_plugin_textdomain( 'prosports', false, plugin_basename( dirname( __FILE__ ) . "/languages" ) );
+	}
+
+	/**
+	 * Ensure theme and server variable compatibility and setup image sizes.
+	 */
+	public function setup_environment() {
+		if ( ! current_theme_supports( 'post-thumbnails' ) ) {
+			add_theme_support( 'post-thumbnails' );
+		}
+
+		// Add image sizes
+		add_image_size( 'prosports-fit-medium',  300, 300, false );
+		add_image_size( 'prosports-fit-icon',  128, 128, false );
+		add_image_size( 'prosports-fit-mini',  32, 32, false );
+	}
+
+	/** Helper functions ******************************************************/
+
+	/**
+	 * Get the plugin url.
+	 *
+	 * @return string
+	 */
+	public function plugin_url() {
+		return untrailingslashit( plugins_url( '/', __FILE__ ) );
+	}
+
+	/**
+	 * Get the plugin path.
+	 *
+	 * @return string
+	 */
+	public function plugin_path() {
+		return untrailingslashit( plugin_dir_path( __FILE__ ) );
+	}
+
+	/**
+	 * Get the template path.
+	 *
+	 * @return string
+	 */
+	public function template_path() {
+		return apply_filters( 'SP_TEMPLATE_PATH', 'prosports/' );
+	}
+}
+
+endif;
+
+if ( ! function_exists( 'SP' ) ):
+
+/**
+ * Returns the main instance of SP to prevent the need to use globals.
+ *
+ * @since  0.7
+ * @return ProSports
+ */
+function SP() {
+	return ProSports::instance();
+}
+
+SP();
+
+endif;

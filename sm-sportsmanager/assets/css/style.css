@@ -1,0 +1,33 @@
+.text_field {
+	padding:5px;
+}
+.file_field {
+	width: 79% !important;
+}
+.rwmb-label {
+	color:#FFF;
+}
+.form-table th {
+	text-align: left;
+	padding: 25px 10px 20px 15px;
+	width: 200px;
+	line-height: 1.3;
+	font-weight: 600;
+}
+.small_text {
+	width: 50px !important;
+}
+.optionBackground {
+	background-color:black;
+}
+.display_tabs {
+	margin-top:35px;
+}
+.leftmove {
+	float:left;
+	margin-top:10px;
+	color:#EEE;
+}
+select{
+	width:50%;
+}
