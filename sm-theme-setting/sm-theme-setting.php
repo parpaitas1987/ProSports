@@ -45,6 +45,9 @@ function theme_setting_activate(){
             "_paypal_email" => '',
             "_paypal_mode" => ''
 	   );
+
+    
+
     // Maping array
 	$theme_setting = array_map( 'stripslashes_deep', $theme_setting );
     // Put array in serialize way
@@ -69,6 +72,14 @@ global $wpdb; // this is how you get access to the database
                 $theme_setting = $output;
                 $theme_setting = maybe_serialize( $theme_setting );
                 update_option( "_sportstheme_setting",$theme_setting,'no' );
+
+                
+
+        if ($output['_footer_credit_link']=='yes') {
+            add_option("_display_footer_links","yes");
+    } else {
+            delete_option("_display_footer_links");
+    }
 
                echo 'Setting has been saved';
         } else {
@@ -138,6 +149,21 @@ function theme_setting_form() {
 <div class="smallTxt-note"><a href="javascript:;" onclick="displayshortCode('_phone_no')" >Show ShortCode</a></div>
                     </td>
         		</tr>
+
+                <tr valign="top">
+                    <th scope="row"><?php _e('Credit Link'); ?></th>
+                    <td>
+                    
+                    <select name="_footer_credit_link" id="_footer_credit_link">
+                        <option <?php if (get_option('_display_footer_links')=='yes') { echo 'selected'; } else { echo ''; } ?> value="yes">Yes</option>
+                        <option <?php if (get_option('_display_footer_links')!='yes') { echo 'selected'; } else { echo ''; } ?> value="no">No</option>
+                    </select>
+
+    
+
+
+                    </td>
+                </tr>
         		
         		<tr valign="top">
         			<th scope="row"><?php _e('Header Code'); ?></th>

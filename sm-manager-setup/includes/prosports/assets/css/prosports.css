@@ -5,12 +5,12 @@
 
 
 /* Header */
-.sp-header {
+/* .sp-header {
 	position: relative;
 	overflow: visible;
 }
 
-/* Templates */
+Templates
 .sp-template {
 	margin-bottom: 1.5em;
 }
@@ -31,7 +31,7 @@
 	overflow: hidden;
 }
 
-/* Data Tables */
+Data Tables
 .sp-scrollable-table-wrapper {
 	overflow: auto;
 }
@@ -80,7 +80,7 @@
 	width: 1px;
 }
 
-/* Pagination */
+Pagination
 .sp-paginated-table {
 	margin-bottom: 0 !important;
 }
@@ -114,7 +114,7 @@
 	text-align: center;
 }
 
-/* League Table */
+League Table
 .sp-league-table td {
 	line-height: 2em;
 }
@@ -133,7 +133,7 @@
 	max-height: 2em;
 }
 
-/* Player List */
+Player List
 .sp-player-list td {
 	line-height: 2em;
 }
@@ -152,13 +152,13 @@
 	max-height: 2em;
 }
 
-/* Button */
+Button
 .sp-button {
 	border: none;
 	cursor: pointer;
 }
 
-/* Event Performance */
+Event Performance
 .sp-event-performance .sub-in,
 .sp-event-performance .sub-out {
 	cursor: default;
@@ -177,7 +177,7 @@
 	width: 25%;
 }
 
-/* Event Calendar */
+Event Calendar
 .sp-event-calendar {
     border-spacing: 0;
 	border-collapse: separate;
@@ -195,7 +195,7 @@
 	text-align: left;
 }
 
-/* Event List */
+Event List
 .sp-event-list .data-date date,
 .sp-event-list .data-time date {
 	display: none !important;
@@ -217,7 +217,7 @@
 	vertical-align: middle;
 }
 
-/* Event Blocks */
+Event Blocks
 .sp-event-blocks thead {
 	display: none;
 }
@@ -258,7 +258,7 @@
 	padding: 0;
 }
 
-/* Google Maps */
+Google Maps
 .sp-google-map {
 	height: 320px;
 }
@@ -269,18 +269,18 @@
 	margin-bottom: 4em;
 }
 
-/* View all */
+View all
 .sp-view-all-link {
 	display: block;
 	margin-top: 0.5em;
 }
 
-/* Alternate */
+Alternate
 .sp-data-table tbody tr.odd {
 	background: rgba(0, 0, 0, 0.02);
 }
 
-/* Highlight */
+Highlight
 .sp-highlight {
 	font-weight: bold;
 }
@@ -334,4 +334,4 @@
  	.sp-responsive-table-wrapper .scrollable .data-date {
 		display: none;
 	}
-}
+} */

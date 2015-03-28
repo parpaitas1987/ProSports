@@ -169,8 +169,8 @@ class Designmodo_registration_form
     }
     function flat_ui_kit()
     {
-        wp_enqueue_style('bootstrap-css', plugins_url('bootstrap/css/bootstrap.css', __FILE__));
-        wp_enqueue_style('flat-ui-kit', plugins_url('css/flat-ui.css', __FILE__));
+        
+        
     }
     function shortcode()
     {

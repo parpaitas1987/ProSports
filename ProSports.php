@@ -8,7 +8,6 @@
  * Tested up to: 4.0
  * Author: lswjohn
  * Author URI: http://livescores.website/ProSports
- * Text Domain: prosports
  * License: GPL2
  */
 /* Copyright 2015  Adeel Mughal @ Bir Al Sabia  (email : shahid.umar@gmail.com)
@@ -47,7 +46,7 @@ add_action('wp_footer', 'wpmp_switcher_wp_footer');
 function wpmp_switcher_wp_footer() {
 	
 	if (get_option("_display_footer_links")=='yes') {
-				echo "<div style='text-align:center; margin-bottom:20px;'>Powered by <a href='http://livescores.website/prosports/' target='_blank'>ProSports</a></div>";
+				echo "<br><br><p style='text-align:center;'>Powered by <a href='http://livescores.website/prosports/' target='_blank'>ProSports</a></p><br><br>";
 	}
 }
 
