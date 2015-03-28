@@ -373,7 +373,7 @@ function theme_setting_form() {
             </table>
         </div>
         	<input type="hidden" name="action" id="action" value="update_setting" />
-        	<div class="optionsframework-footer"><div class="leftmove">copy 2015 - nSol</div>  
+        	<div class="optionsframework-footer"><div class="leftmove">&copy 2015 - ProSports</div>  
                 <input class="button-primary vpanel_save vpanel_help" type="button" id="settingbtn" value="Update Setting" />
                 <div class="clear"></div>
         	</div>
