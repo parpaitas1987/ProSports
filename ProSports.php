@@ -2,34 +2,22 @@
 /**
  * Plugin Name: ProSports
  * Plugin URI: http://livescores.website/ProSports
- * Description: Manage your sports and its players, staff, events, league tables, and player lists.
- * Version: 2.0
- * Requires at least: 3.8
- * Tested up to: 4.0
- * Author: lswjohn
+ * Description: Manage your club and its players, staff, events, league tables, and player lists.
+ * Version: 1.7.3
+ * Author: Lswjohn
  * Author URI: http://livescores.website/ProSports
- * License: GPL2
+ * Requires at least: 3.8
+ * Tested up to: 4.1
+ *
+ * Text Domain: prosports
+ * Domain Path: /sm-manager-setup/languages/
+ *
+ * @package ProSports
+ * @category Core
+ * @author Lswjohn
  */
-/* Copyright 2015  Adeel Mughal @ Bir Al Sabia  (email : shahid.umar@gmail.com)
-
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License, version 2, as 
-   published by the Free Software Foundation.
-
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
-
-// Make sure we don't expose any info if called directly
 if ( ! defined( 'ABSPATH' ) ) {
-	echo 'Hi there!  I\'m just a plugin, not much I can do when called directly.';
-	exit;
+	exit; // Exit if accessed directly
 }
 // Do not change anything
 define( 'SPORTSMANAGER_VERSION', '1.0' );
@@ -39,7 +27,6 @@ define( 'SPORTSMANAGER__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'SPORTSMANAGER__PLUGIN_IMG', plugin_dir_url( __FILE__ ).'assets/images/' );
 define( 'SPORTSMANAGER__PLUGIN_CSS', plugin_dir_url( __FILE__ ).'assets/css/' );
 define( 'SPORTSMANAGER__PLUGIN_JS',  plugin_dir_url( __FILE__ ).'assets/js/' );
-
 
 add_action('wp_footer', 'wpmp_switcher_wp_footer');
 
@@ -56,6 +43,14 @@ function plugin_run_function() {
 			add_option("_display_footer_links","yes");
 		}
 }
+
+register_deactivation_hook( __FILE__, 'remove_footer_link' );
+
+function remove_footer_link() {
+	delete_option("_display_footer_links");
+}
+
+
 
 add_action('init', 'plugin_run_function');
 

@@ -1,15 +1,4 @@
 <?php
-/*
- * Plugin Name: Player Game Rules
- * Plugin URI: http://biralsabia.net/
- * Description: Show events of player.
- * Version: 1.0
- * Author: Adeel Mughal @ Bir Al Sabia
- * Author URI: http://biralsabia.net/
- * License: GPL2
- */
-?>
-<?php
 if ( ! defined( 'ABSPATH' ) ) { echo 'dont try to play with my code'; exit; } // Exit if accessed directly
 function array_divide($array, $segmentCount) {
 	$dataCount = count($array);
