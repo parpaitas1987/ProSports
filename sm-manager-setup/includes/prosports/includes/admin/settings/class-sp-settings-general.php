@@ -104,6 +104,15 @@ class SP_Settings_General extends SP_Settings_Page {
 		endif;
 
 		$settings = array_merge( $settings, array(
+
+			array(
+				'title' 	=> __( 'Credit Link', 'prosports' ),
+				'desc' 		=> __( 'Display Credit link in your website footer', 'prosports' ),
+				'id' 		=> '_display_footer_links',
+				'default'	=> 'no',
+				'type' 		=> 'checkbox',
+			),
+
 			array(
 				'title' 	=> __( 'Custom CSS', 'prosports' ),
 				'id' 		=> 'prosports_custom_css',
@@ -174,10 +183,17 @@ class SP_Settings_General extends SP_Settings_Page {
 		return apply_filters( 'prosports_general_settings', $settings ); // End general settings
 	}
 
+
+
+
+
 	/**
 	 * Save settings
 	 */
 	public function save() {
+
+
+
 		if ( isset( $_POST['prosports_sport'] ) && ! empty( $_POST['prosports_sport'] ) && get_option( 'prosports_sport', null ) != $_POST['prosports_sport'] ):
 			$sport = $_POST['prosports_sport'];
 			SP_Admin_Sports::apply_preset( $sport );
