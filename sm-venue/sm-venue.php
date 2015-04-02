@@ -1,14 +1,4 @@
 <?php
-/**
- * Plugin Name: SM Venue
- * Plugin URI: http://www.biralsabia.com/playpal
- * Description: Declares a plugin that will create a custom tax type displaying movie reviews.
- * Version: 1.0
- * Author: Adeel Mughal @ Bir Al Sabia
- * Author URI: http://www.biralsabia.net/team
- * Network: false
- * License: GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
- */
 // add new venue function
 function add_new_venue() {
 	// Add new "Locations" taxonomy to Posts

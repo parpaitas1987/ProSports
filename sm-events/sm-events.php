@@ -1,14 +1,4 @@
 <?php
-/**
- * Plugin Name: SM Teams
- * Plugin URI: http://www.biralsabia.com/playpal
- * Description: Declares a plugin that will create a custom post type displaying movie reviews.
- * Version: 1.0
- * Author: Adeel Mughal @ Bir Al Sabia
- * Author URI: http://www.biralsabia.net/team
- * Network: false
- * License: GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
- */
 // check file not accessable directly
 if ( !defined( 'ABSPATH' ) ) {
 	die( "No script kiddies please!" );

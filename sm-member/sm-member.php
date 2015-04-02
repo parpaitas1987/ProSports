@@ -1,14 +1,4 @@
 <?php
-/**
- * Plugin Name: SM Member
- * Plugin URI: http://www.biralsabia.com/playpal
- * Description: Declares a plugin that will create a custom tax type displaying movie reviews.
- * Version: 1.0
- * Author: Adeel Mughal @ Bir Al Sabia
- * Author URI: http://www.biralsabia.net/team
- * Network: false
- * License: GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
- */
 // create custom post type function
 function add_new_memeber_role() {
 	// Add new "Locations" taxonomy to Posts

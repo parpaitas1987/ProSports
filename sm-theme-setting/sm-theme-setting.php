@@ -75,11 +75,11 @@ global $wpdb; // this is how you get access to the database
 
                 
 
-        if ($output['_footer_credit_link']=='yes') {
+       /* if ($output['_footer_credit_link']=='yes') {
             add_option("_display_footer_links","yes");
     } else {
             delete_option("_display_footer_links");
-    }
+    }*/
 
                echo 'Setting has been saved';
         } else {
@@ -149,22 +149,6 @@ function theme_setting_form() {
 <div class="smallTxt-note"><a href="javascript:;" onclick="displayshortCode('_phone_no')" >Show ShortCode</a></div>
                     </td>
         		</tr>
-
-                <tr valign="top">
-                    <th scope="row"><?php _e('Credit Link'); ?></th>
-                    <td>
-                    
-                    <select name="_footer_credit_link" id="_footer_credit_link">
-                        <option <?php if (get_option('_display_footer_links')=='yes') { echo 'selected'; } else { echo ''; } ?> value="yes">Yes</option>
-                        <option <?php if (get_option('_display_footer_links')!='yes') { echo 'selected'; } else { echo ''; } ?> value="no">No</option>
-                    </select>
-
-    
-
-
-                    </td>
-                </tr>
-        		
         		<tr valign="top">
         			<th scope="row"><?php _e('Header Code'); ?></th>
         			<td><textarea name="_header_code" rows="5" cols="" placeholder="Code will be added before head closing tag"><?php echo $get_theme_setting['_header_code']; ?></textarea>

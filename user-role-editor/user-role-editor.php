@@ -1,19 +1,4 @@
 <?php
-/*
-Plugin Name: User Role Editor
-Plugin URI: http://role-editor.com
-Description: Change/add/delete WordPress user roles and capabilities.
-Version: 4.18.1
-Author: Vladimir Garagulya
-Author URI: http://www.shinephp.com
-Text Domain: ure
-Domain Path: /lang/
-*/
-
-/*
-Copyright 2010-2014  Vladimir Garagulya  (email: vladimir@shinephp.com)
-*/
-
 if (!function_exists("get_option")) {
   header('HTTP/1.0 403 Forbidden');
   die;  // Silence is golden, direct call is prohibited

@@ -1,14 +1,4 @@
 <?php
-/**
- * Plugin Name: SM Players
- * Plugin URI: http://www.biralsabia.com/playpal
- * Description: Declares a plugin that will create a custom post type displaying movie reviews.
- * Version: 1.0
- * Author: Adeel Mughal @ Bir Al Sabia
- * Author URI: http://www.biralsabia.net/team
- * Network: false
- * License: GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
- **/
 // file not accessable directly in browser
 if ( !defined( 'ABSPATH' ) ) {	die( "No script kiddies please!" ); }
 ?>

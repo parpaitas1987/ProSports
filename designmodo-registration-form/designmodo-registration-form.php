@@ -1,12 +1,5 @@
 <?php
-/*
-  Plugin Name: SM Register
-  Plugin URI: http://example.com
-  Description: Registration form plugin that just work
-  Version: 1.0
-  Author: 
-  Author URI: http://example.com
- */
+
 class Designmodo_registration_form
 {
     private $username;

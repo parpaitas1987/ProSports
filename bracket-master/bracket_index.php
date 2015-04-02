@@ -1,14 +1,4 @@
 <?php
-/**
- * Plugin Name: SM Manager - Tournament Bracket System
- * Plugin URI: http://www.biralsabia.com/playpal
- * Description: Declares a plugin that will create a custom post type displaying movie reviews.
- * Version: 1.0
- * Author: Adeel Mughal @ Bir Al Sabia
- * Author URI: http://www.biralsabia.net/team
- * Network: false
- * License: GPLv2 (http://www.gnu.org/licenses/gpl-2.0.html)
- */
 include_once(dirname (__FILE__) . '/tableinstall.php');
 register_activation_hook(__FILE__,'install_bracket_tables');
 

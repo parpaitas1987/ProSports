@@ -19,6 +19,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
+define('ZENCACHE_ALLOWED', FALSE);
+define('DONOTCACHEPAGE', TRUE);
 // Do not change anything
 define( 'SPORTSMANAGER_VERSION', '1.0' );
 define( 'SPORTSMANAGER__MINIMUM_WP_VERSION', '3.1' );
