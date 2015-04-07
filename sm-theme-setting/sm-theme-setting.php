@@ -59,6 +59,7 @@ register_deactivation_hook( __FILE__, 'theme_setting_deactivate' );
 function theme_setting_deactivate() {
 	delete_option( '_sportstheme_setting' );
 }
+
 add_action('wp_ajax_stravyfuncajax22', 'my_action_callback');
 add_action('wp_ajax_nopriv_stravyfuncajax22', 'my_action_callback');
 function my_action_callback() {

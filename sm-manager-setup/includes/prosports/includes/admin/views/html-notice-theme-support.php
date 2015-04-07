@@ -12,8 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	</p>
 </div> -->
 
-
-<?php if (get_option("_display_footer_links")!='yes') {  ?>
+<?php if (get_option("_display_footer_links")!='yes'  || !get_option("_display_footer_links")) {  ?>
 <div id="message" class="error prosports-message">
 <form action="" method="post">
 
@@ -23,7 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 			<input type="hidden" name="addoption" value="yes">
 			<a class="button-secondary" href="<?php echo add_query_arg( 'hide_theme_support_notice', 'true' ); ?>"><?php _e( 'Hide this notice', 'prosports' ); ?></a>
 			</p>
-
 </form>
 
 </div>
