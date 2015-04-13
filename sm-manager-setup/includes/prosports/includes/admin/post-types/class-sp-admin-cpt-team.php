@@ -2,9 +2,9 @@
 /**
  * Admin functions for the teams post type
  *
- * @author 		ProSports
+ * @author 		ThemeBoy
  * @category 	Admin
- * @package 	ProSports/Admin/Post_Types
+ * @package 	SportsPress/Admin/Post_Types
  * @version     1.5
  */
 

@@ -2,9 +2,9 @@
 /**
  * Admin functions for the events post type
  *
- * @author 		ProSports
+ * @author 		ThemeBoy
  * @category 	Admin
- * @package 	ProSports/Admin/Post_Types
+ * @package 	SportsPress/Admin/Post_Types
  * @version     1.5
  */
 
@@ -93,7 +93,7 @@ class SP_Admin_CPT_Event extends SP_Admin_CPT {
 			'sp_time' => __( 'Time', 'prosports' ),
 			'sp_team' => __( 'Teams', 'prosports' ),
 			'sp_league' => __( 'Competition', 'prosports' ),
-			'sm_seasons' => __( 'Season', 'prosports' ),
+			'sp_season' => __( 'Season', 'prosports' ),
 			'sp_venue' => __( 'Venue', 'prosports' ),
 		), $existing_columns, array(
 			'title' => __( 'Event', 'prosports' ),
@@ -178,8 +178,8 @@ class SP_Admin_CPT_Event extends SP_Admin_CPT {
 			case 'sp_league':
 				echo get_the_terms ( $post_id, 'sp_league' ) ? the_terms( $post_id, 'sp_league' ) : '&mdash;';
 				break;
-			case 'sm_seasons':
-				echo get_the_terms ( $post_id, 'sm_seasons' ) ? the_terms( $post_id, 'sm_seasons' ) : '&mdash;';
+			case 'sp_season':
+				echo get_the_terms ( $post_id, 'sp_season' ) ? the_terms( $post_id, 'sp_season' ) : '&mdash;';
 				break;
 			case 'sp_venue':
 				echo get_the_terms ( $post_id, 'sp_venue' ) ? the_terms( $post_id, 'sp_venue' ) : '&mdash;';
@@ -215,11 +215,11 @@ class SP_Admin_CPT_Event extends SP_Admin_CPT {
 		);
 		sp_dropdown_taxonomies( $args );
 
-		$selected = isset( $_REQUEST['sm_seasons'] ) ? $_REQUEST['sm_seasons'] : null;
+		$selected = isset( $_REQUEST['sp_season'] ) ? $_REQUEST['sp_season'] : null;
 		$args = array(
 			'show_option_all' =>  __( 'Show all seasons', 'prosports' ),
-			'taxonomy' => 'sm_seasons',
-			'name' => 'sm_seasons',
+			'taxonomy' => 'sp_season',
+			'name' => 'sp_season',
 			'selected' => $selected
 		);
 		sp_dropdown_taxonomies( $args );
