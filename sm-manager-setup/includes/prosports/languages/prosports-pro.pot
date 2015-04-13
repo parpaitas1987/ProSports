@@ -1,0 +1,730 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ProSports\n"
+"POT-Creation-Date: 2014-12-10 10:15+1000\n"
+"PO-Revision-Date: 2014-12-10 10:15+1000\n"
+"Last-Translator: ProSports <support@prosports.com>\n"
+"Language-Team: ProSports <support@prosports.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: ./includes/prosports-branding\n"
+"X-Poedit-SearchPath-1: ./includes/prosports-league-menu\n"
+"X-Poedit-SearchPath-2: ./includes/prosports-sponsors\n"
+"X-Poedit-SearchPath-3: ./includes/prosports-staff-directories\n"
+"X-Poedit-SearchPath-4: ./includes/prosports-team-colors\n"
+"X-Poedit-SearchPath-5: ./includes/prosports-tournaments\n"
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:25
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:44
+msgid "Branding"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:47
+msgid "Label"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:50
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:6
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:6
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:6
+msgid "ProSports"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:117
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:120
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:123
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:124
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:126
+msgid "Icon"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:123
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:124
+#, php-format
+msgid "Remove %s"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:126
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:236
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:377
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:210
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:142
+msgid "Admin Color Scheme"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:157
+msgid "Base Color"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:158
+msgid "Highlight"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:159
+msgid "Notifications"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:160
+msgid "Actions"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:161
+msgid "Text"
+msgstr ""
+
+#: includes/prosports-branding/includes/class-sp-settings-branding.php:166
+msgid "Enable"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:25
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:44
+msgid "League Menu"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:47
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:120
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:51
+#: includes/prosports-tournaments/includes/class-sp-admin-cpt-tournament.php:44
+msgid "Title"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:58
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:88
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:140
+msgid "Sort by"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:63
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:93
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:145
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:67
+msgid "Menu Order"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:64
+#: includes/prosports-sponsors/includes/class-sp-admin-cpt-sponsor.php:52
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:95
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:147
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:26
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:69
+#: includes/prosports-sponsors/prosports-sponsors.php:369
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:194
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory.php:210
+msgid "Name"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:65
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:96
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:148
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:70
+msgid "Random"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:70
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:101
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:153
+msgid "Sort Order"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:75
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:106
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:158
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:75
+msgid "Ascending"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:76
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:107
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:159
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:76
+msgid "Descending"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:81
+msgid "Width"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:97
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:166
+msgid "Text Color"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:106
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:175
+msgid "Background Color"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:115
+msgid "Align"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:120
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:205
+msgid "Left"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:121
+msgid "Center"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:122
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:244
+msgid "Right"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:184
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:187
+#: includes/prosports-sponsors/includes/class-sp-admin-cpt-sponsor.php:70
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:213
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:216
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:263
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:266
+#: includes/prosports-sponsors/prosports-sponsors.php:384
+msgid "Logo"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:191
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:287
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:217
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:267
+msgid "Max Width"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:193
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:289
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:219
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:269
+msgid "Max Height"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:199
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:202
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:238
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:241
+msgid "Position"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:203
+msgid "Bottom"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:211
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:214
+msgid "Remove Image"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:215
+msgid "Remove logo"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:221
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:224
+msgid "Select Image"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:225
+#: includes/prosports-sponsors/prosports-sponsors.php:381
+#: includes/prosports-sponsors/prosports-sponsors.php:387
+msgid "Select Logo"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:225
+msgid "Add logo"
+msgstr ""
+
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:259
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:261
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:283
+#: includes/prosports-league-menu/includes/class-sp-settings-league-menu.php:286
+#: includes/prosports-tournaments/prosports-tournaments.php:195
+msgid "Teams"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-admin-cpt-sponsor.php:66
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:27
+msgid "URL"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-admin-cpt-sponsor.php:67
+#: includes/prosports-sponsors/includes/class-sp-meta-box-sponsor-details.php:48
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:47
+msgid "Impressions"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-admin-cpt-sponsor.php:68
+#: includes/prosports-sponsors/includes/class-sp-meta-box-sponsor-details.php:51
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:55
+msgid "Clicks"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-admin-cpt-sponsor.php:71
+#: includes/prosports-sponsors/prosports-sponsors.php:111
+#: includes/prosports-sponsors/prosports-sponsors.php:396
+msgid "Sponsor"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-meta-box-sponsor-details.php:30
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:37
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:236
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:377
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:31
+msgid "Details"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-meta-box-sponsor-details.php:42
+msgid "Site URL"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-meta-box-sponsor-details.php:45
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:63
+#: includes/prosports-sponsors/includes/sp-sponsor-functions.php:25
+#: includes/prosports-sponsors/prosports-sponsors.php:421
+msgid "Visit Site"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:25
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:44
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:6
+#: includes/prosports-sponsors/prosports-sponsors.php:110
+#: includes/prosports-sponsors/prosports-sponsors.php:222
+msgid "Sponsors"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:48
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:56
+msgid "Exclude logged-in users"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:64
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:72
+msgid "Header"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:75
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:127
+msgid "Display"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:79
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:131
+msgid "sponsors"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:94
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:146
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:68
+msgid "Date"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:117
+msgid "Footer"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-settings-sponsors.php:242
+msgid "Top"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:24
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:104
+msgid "Import Sponsors"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:82
+#, php-format
+msgid ""
+"Import complete - imported <strong>%s</strong> sponsors and skipped <strong>"
+"%s</strong>."
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:92
+msgid "All done!"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:92
+msgid "View Sponsors"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:115
+msgid ""
+"Hi there! Choose a .csv file to upload, then click \"Upload file and import"
+"\"."
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-sponsor-importer.php:116
+#, php-format
+msgid ""
+"Sponsors need to be defined with columns in a specific order (2 columns). <a "
+"href=\"%s\">Click here to download a sample</a>."
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:5
+msgid "A list of sponsors."
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:59
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:54
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:54
+msgid "Title:"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:62
+msgid "Number of sponsors to show:"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:65
+msgid "Sort by:"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:73
+msgid "Sort Order:"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:79
+msgid "Max Width:"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/class-sp-widget-sponsors.php:82
+msgid "Max Height:"
+msgstr ""
+
+#: includes/prosports-sponsors/includes/sp-sponsor-functions.php:38
+#, php-format
+msgid "%s impression"
+msgid_plural "%s impressions"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/prosports-sponsors/includes/sp-sponsor-functions.php:69
+#, php-format
+msgid "%s click"
+msgid_plural "%s clicks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:112
+msgid "Add New Sponsor"
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:113
+msgid "Edit Sponsor"
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:114
+#: includes/prosports-staff-directories/prosports-staff-directories.php:109
+#: includes/prosports-tournaments/prosports-tournaments.php:105
+msgid "New"
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:115
+#: includes/prosports-staff-directories/prosports-staff-directories.php:110
+#: includes/prosports-tournaments/prosports-tournaments.php:106
+msgid "View"
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:116
+#: includes/prosports-staff-directories/prosports-staff-directories.php:111
+#: includes/prosports-tournaments/prosports-tournaments.php:107
+msgid "Search"
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:117
+#: includes/prosports-sponsors/prosports-sponsors.php:118
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:237
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:311
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:368
+#: includes/prosports-staff-directories/prosports-staff-directories.php:112
+#: includes/prosports-staff-directories/prosports-staff-directories.php:113
+#: includes/prosports-tournaments/prosports-tournaments.php:108
+#: includes/prosports-tournaments/prosports-tournaments.php:109
+msgid "No results found."
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:170
+msgid "ProSports Sponsors (CSV)"
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:170
+msgid "Import <strong>sponsors</strong> from a csv file."
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:390
+msgid "Remove Logo"
+msgstr ""
+
+#: includes/prosports-sponsors/prosports-sponsors.php:393
+msgid "User"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:52
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:96
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:330
+#: includes/prosports-tournaments/includes/class-sp-admin-cpt-tournament.php:45
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:60
+msgid "Competition"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:53
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:111
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:333
+#: includes/prosports-tournaments/includes/class-sp-admin-cpt-tournament.php:46
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:75
+msgid "Season"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:54
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:126
+msgid "Team"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:66
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:69
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:75
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:102
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:117
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:132
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:357
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:358
+#: includes/prosports-tournaments/includes/class-sp-admin-cpt-tournament.php:59
+#: includes/prosports-tournaments/includes/class-sp-admin-cpt-tournament.php:62
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:64
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:79
+msgid "All"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:98
+msgid "Show all competitions"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:107
+msgid "Show all seasons"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-admin-cpt-directory.php:118
+msgid "Show all teams"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:35
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:30
+msgid "Shortcode"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:36
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:336
+msgid "Layout"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:38
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:57
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:57
+#: includes/prosports-staff-directories/prosports-staff-directories.php:106
+msgid "Staff Directory"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:39
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:33
+msgid "Description"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:42
+#: includes/prosports-staff-directories/prosports-staff-directories.php:234
+msgid "Contact Info"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:46
+#: includes/prosports-staff-directories/prosports-staff-directories.php:210
+#: includes/prosports-staff-directories/prosports-staff-directories.php:252
+msgid "Staff Directories"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:66
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:42
+msgid ""
+"Copy this code and paste it into your post, page or text widget content."
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:107
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:122
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:137
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:68
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:68
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:71
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:86
+msgid "Add New"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:193
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory.php:210
+#: includes/prosports-staff-directories/prosports-staff-directories.php:284
+msgid "Job"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:258
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:260
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory.php:195
+#: includes/prosports-staff-directories/prosports-staff-directories.php:285
+#: includes/prosports-staff-directories/templates/staff-contacts.php:31
+msgid "Phone"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:266
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:268
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory.php:196
+#: includes/prosports-staff-directories/prosports-staff-directories.php:286
+#: includes/prosports-staff-directories/templates/staff-contacts.php:36
+msgid "Email"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-staff-directory-meta-boxes.php:327
+msgid "Directory"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:5
+msgid "A gallery of staff."
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:6
+msgid "Staff Gallery"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:57
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:57
+#, php-format
+msgid "Select %s:"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:73
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:73
+msgid "Number of staff to show:"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-gallery.php:77
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:77
+msgid "Display link to view all staff"
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:5
+msgid "A list of staff."
+msgstr ""
+
+#: includes/prosports-staff-directories/includes/class-sp-widget-staff-list.php:6
+msgid "Staff List"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:105
+msgid "Directories"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:107
+msgid "Add New Staff Directory"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:108
+msgid "Edit Staff Directory"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:220
+msgid "List"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:221
+msgid "Gallery"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:235
+msgid "Link phone"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:243
+msgid "Link email"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:255
+msgid "Pagination"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:256
+msgid "Paginate"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:263
+msgid "Limit"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:267
+msgid "staff"
+msgstr ""
+
+#: includes/prosports-staff-directories/prosports-staff-directories.php:287
+#: includes/prosports-staff-directories/templates/staff-gallery.php:111
+#: includes/prosports-staff-directories/templates/staff-list.php:108
+msgid "View all staff"
+msgstr ""
+
+#: includes/prosports-team-colors/prosports-team-colors.php:76
+msgid "Team Colors"
+msgstr ""
+
+#: includes/prosports-tournaments/includes/class-sp-admin-cpt-tournament.php:47
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:90
+msgid "Rounds"
+msgstr ""
+
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:32
+#: includes/prosports-tournaments/prosports-tournaments.php:102
+#: includes/prosports-tournaments/prosports-tournaments.php:211
+msgid "Tournament"
+msgstr ""
+
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:92
+#: includes/prosports-tournaments/prosports-tournaments.php:220
+#: includes/prosports-tournaments/templates/tournament-winner.php:34
+msgid "Winner"
+msgstr ""
+
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:96
+msgid "-- Not set --"
+msgstr ""
+
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:191
+#: includes/prosports-tournaments/templates/tournament-bracket.php:33
+#, php-format
+msgid "Round %s"
+msgstr ""
+
+#: includes/prosports-tournaments/includes/class-sp-tournament-meta-boxes.php:210
+msgid "Event"
+msgstr ""
+
+#: includes/prosports-tournaments/prosports-tournaments.php:101
+#: includes/prosports-tournaments/prosports-tournaments.php:181
+#: includes/prosports-tournaments/prosports-tournaments.php:192
+msgid "Tournaments"
+msgstr ""
+
+#: includes/prosports-tournaments/prosports-tournaments.php:103
+msgid "Add New Tournament"
+msgstr ""
+
+#: includes/prosports-tournaments/prosports-tournaments.php:104
+msgid "Edit Tournament"
+msgstr ""
+
+#: includes/prosports-tournaments/prosports-tournaments.php:196
+msgid "Display logos"
+msgstr ""
